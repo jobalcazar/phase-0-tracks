@@ -1,0 +1,23 @@
+
+#glasses{
+  position:absolute;
+  top: 220px;
+  left: 515px;
+  margin: auto;;
+  z-index: 1;
+
+  }
+#octopus{
+  position: absolute;
+  top: 120px;
+  left: 475px;
+  margin: auto;;
+}
+
+#hat{
+  position:absolute;;
+  margin: auto;
+  top: 45px;
+  left:450px ;
+  z-index: 1;
+}
