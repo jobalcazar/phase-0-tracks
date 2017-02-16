@@ -1,0 +1,21 @@
+Enter the elevator
+click on desired level of floor
+While person is in elevator and door is closed:
+  wait until elevator reaches your floor
+  if door opens and on your floor
+    exit
+  else
+    stay on elevator
+
+task: operating a computer to open chrome
+if computer is off
+  turn on computer
+else
+  move mouse to make sure not on sleep mode
+while computer is on and chrome app not selected
+  if password requested
+    enter password
+  else
+    continue
+  move mouse clicker over to chrome app
+  click on chrome app
