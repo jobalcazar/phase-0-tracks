@@ -7,3 +7,19 @@
 // and save the index value by setting it equal to index. Do this for the entire
 //lenght of the array and then return the value element at the index with greatest
 //word length
+
+function longest_phrase(array){
+  var index =0;
+  var counter =0;
+  var temp =0;
+  for (var i =0; i<array.length;i++){
+    temp=array[i].length;
+    if (temp>counter){
+      counter=temp;
+      index=i;
+    }
+  }
+  return array[index];
+}
+
+console.log(longest_phrase(["long phrase","longest phrase","longer phrase"]));
