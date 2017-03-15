@@ -22,4 +22,39 @@ function longest_phrase(array){
   return array[index];
 }
 
+function share(object1,object2){
+  if (object1.name == object2.name){
+    return true;
+  }
+  else if (object1.age==object2.age) {
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+function array_generate(length){
+  var word_array=[];
+  var alpha= "abcdefghijklmnopqrstuvwxyz"
+  for (var i=0; i<length; i++){
+    var word_length= Math.floor((Math.random() * 10) + 1);
+    new_word="";
+    for (var j=0; j<word_length;j++){
+      var letter= Math.floor((Math.random() * 26) + 1)
+      new_word=new_word+alpha.charAt(letter);
+    }
+    word_array.push(new_word);
+  }
+  return word_array;
+}
+
 console.log(longest_phrase(["long phrase","longest phrase","longer phrase"]));
+console.log(share({name: "Steven", age: 54},{name: "Tamir", age: 54}));
+console.log(share({name: "Jose", age: 23},{name: "Tamir", age: 24}));
+
+for (var k=0; k<10;k++){
+  var lol=array_generate(19);
+  console.log(lol);
+  console.log(longest_phrase(lol));
+}
