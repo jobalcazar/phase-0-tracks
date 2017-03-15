@@ -21,7 +21,8 @@ function longest_phrase(array){
   }
   return array[index];
 }
-
+// for each object, you will compare the name key and the age value with one
+//another. if either of those are true then return true, otherwise return false.
 function share(object1,object2){
   if (object1.name == object2.name){
     return true;
@@ -33,7 +34,12 @@ function share(object1,object2){
     return false;
   }
 }
-
+//given a length parameter, you will add a randomly constructed word of length
+//parameter length.  using random generator, I will shift the random number by
+//10 so that it will give me a random length. After word I will construct
+// a random number from 1 to 27 that will access any letter of the alphabet
+// and add to an existing empty string to make a word of random letters of
+//random length.
 function array_generate(length){
   var word_array=[];
   var alpha= "abcdefghijklmnopqrstuvwxyz"
